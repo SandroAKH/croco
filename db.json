@@ -1,0 +1,14 @@
+{
+  "userList": [
+    {
+      "id": 1,
+      "email": "user1@gmail.com",
+      "role": ""
+    },
+    {
+      "id": 2,
+      "email": "user2@gmail.com",
+      "role": ""
+    }
+  ]
+}
