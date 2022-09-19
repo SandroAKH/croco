@@ -1,0 +1,52 @@
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    button {
+        width: 40px;
+    }
+
+    p {
+        font-weight: 600;
+        color: #26292E;
+        font-size: 16px;
+    }
+
+    .status-wrapper {
+        display: flex;
+    }
+
+    .user-status {
+        font-size: 12px;
+        font-weight: 300;
+        display: flex;
+        padding-top: 2px;
+        white-space: nowrap;
+        width: 100%;
+
+    }
+
+    span {
+        font-weight: 600;
+        padding-left: 3px;
+        text-transform: capitalize;
+        width: 100%;
+        margin-right: 12px;
+        margin-left: 2px !important;
+        font-size: 12px;
+        padding-top: 2px;
+
+
+    }
+}
+
+.hide-pic {
+    opacity: 0.6;
+
+}
+
+.edit-pic {
+    padding-bottom: 33px;
+    border-bottom: 1px solid #E9E9E9;
+}

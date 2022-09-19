@@ -1,7 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
+import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom'
 import "./styles/app.scss"
 import { UserListProvider } from './context/UserContext'
+
+import UserTable from "./components/table/UserTable";
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
       <Router>
         <div className='container'>
 
-
+          <UserTable />
         </div>
       </Router>
     </UserListProvider>

@@ -1,0 +1,140 @@
+.modal-container {
+    position: fixed;
+    background-color: rgb(46 44 44 / 47%);
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 99;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+
+    .modal {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: auto;
+        padding: 32px;
+        border-radius: 20px;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease;
+        max-width: 380px;
+        height: auto;
+
+        .hide-btn {
+            display: none;
+        }
+
+        .submit-btn {
+            height: 52px;
+            border: none;
+            outline: none;
+            width: 100%;
+            border-radius: 12px;
+            background: #2A84FF;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background: #1773f5;
+                transition: 0.2s ease-in-out;
+
+            }
+        }
+
+        .form-field {
+            height: 40px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #E8E8E8;
+            width: 100%;
+            padding-left: 40px;
+            margin-bottom: 16px;
+            background-repeat: no-repeat;
+            background-position: 4% 50%;
+            transition: 0.5s ease-in-out;
+        }
+
+        .form-field.name {
+
+            background-image: url('../assets/images/user.png');
+        }
+
+        .form-field.mail {
+            background-image: url('../assets/images/mail.png');
+
+        }
+
+        input::placeholder {
+            color: #A3A4A6 !important;
+
+        }
+
+        input:disabled {
+            color: rgba(71, 71, 71, 0.603);
+            background-color: #f5f5f5;
+            cursor: not-allowed;
+            transition: 0.5s ease-in-out;
+            opacity: 0.6;
+        }
+
+        &_header {
+            position: relative;
+            display: flex;
+            margin-bottom: 20px;
+
+            &-title {
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+
+            .close {
+                position: absolute;
+                top: -5px;
+                right: 0;
+                background: transparent;
+                outline: none;
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                border: 1px solid #E9E9E9;
+                cursor: pointer;
+
+                img {
+                    width: 10px;
+
+                    height: auto;
+                    transition: all 0.2s ease;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+
+
+        &_edit_content {
+            padding: 16px;
+
+            border-radius: 12px;
+            border: 1px solid #E8E8E8;
+        }
+    }
+}
+
+.modal-container.show {
+    visibility: visible;
+    opacity: 1;
+}

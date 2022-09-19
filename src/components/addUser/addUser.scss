@@ -1,0 +1,22 @@
+.delete-content {
+    line-height: 40px;
+    position: relative;
+
+    span {
+        position: absolute;
+        right: 16px;
+        text-transform: capitalize;
+        color: #2A84FF;
+        font-weight: 600;
+    }
+}
+
+.delete-btn {
+    background: #EF5858 !important;
+
+    &:hover {
+        background: #f13939 !important;
+        transition: 0.2s ease-in-out;
+
+    }
+}
